@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1759451641374,
+    "titulo": "Homem Aranha",
+    "tipo": "filme",
+    "genero": "ação, drama, ficção, aventura",
+    "ano": "2019",
+    "plataforma": "Prime",
+    "status": "assistido",
+    "temporadas": 0,
+    "episodiosTotal": 0,
+    "episodiosAssistidos": 0,
+    "nota": 8,
+    "dataInicio": null,
+    "duracaoMedia": 130
+  },
+  {
+    "id": 1759786935069,
+    "titulo": "Japão",
+    "tipo": "série",
+    "genero": "ação,drama",
+    "ano": 2020,
+    "plataforma": "HBO",
+    "temporadas": 3,
+    "episodiosTotal": 20,
+    "episodiosAssistidos": 10,
+    "nota": 10,
+    "duracaoMedia": 30
+  },
+  {
+    "id": 1759787130986,
+    "titulo": "Teddy",
+    "tipo": "filme",
+    "genero": "comedia, drama",
+    "ano": 2017,
+    "plataforma": "Prime",
+    "temporadas": 0,
+    "episodiosTotal": 0,
+    "episodiosAssistidos": 0,
+    "nota": null,
+    "duracaoMedia": 125
+  },
+  {
+    "id": 1759787502010,
+    "titulo": "A baleia",
+    "tipo": "filme",
+    "genero": "drama, tristeza, emoção",
+    "ano": 2021,
+    "plataforma": "Netflix",
+    "temporadas": 0,
+    "episodiosTotal": 0,
+    "episodiosAssistidos": 0,
+    "nota": 9.5,
+    "duracaoMedia": 117
+  },
+  {
+    "id": 1759793475001,
+    "titulo": "kaleu",
+    "tipo": "filme",
+    "genero": "ficção cientifica",
+    "ano": 2026,
+    "plataforma": "Youtube",
+    "temporadas": 0,
+    "episodiosTotal": 0,
+    "episodiosAssistidos": 0,
+    "nota": null,
+    "duracaoMedia": 112
+  },
+  {
+    "id": 1759796885340,
+    "titulo": "Project Winter",
+    "tipo": "série",
+    "genero": "drama, aventura",
+    "ano": 2021,
+    "plataforma": "Netflix",
+    "temporadas": 2,
+    "episodiosTotal": 40,
+    "episodiosAssistidos": 0,
+    "nota": null,
+    "duracaoMedia": 35
+  }
+]
