@@ -37,7 +37,7 @@
     "temporadas": 0,
     "episodiosTotal": 0,
     "episodiosAssistidos": 0,
-    "nota": null,
+    "nota": 9.3,
     "duracaoMedia": 125
   },
   {
@@ -75,7 +75,7 @@
     "plataforma": "Netflix",
     "temporadas": 2,
     "episodiosTotal": 40,
-    "episodiosAssistidos": 0,
+    "episodiosAssistidos": 20,
     "nota": null,
     "duracaoMedia": 35
   }
