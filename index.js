@@ -185,7 +185,7 @@ async function atualizarMidia() {
     );
   }
 
-  const novaNota = Number(await inquirer.input({ message: "Dê uma nota (1 a 10, ou 0 para pular):" }));
+  const novaNota = Number(await inquirer.input({ message: "Oq você achou do filme ou serie? Dê uma nota (1 a 10, ou 0 para pular):" }));
   if (novaNota >= 1 && novaNota <= 10) {
     midia.nota = novaNota;
   }
