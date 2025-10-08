@@ -164,7 +164,7 @@ async function listarMidias(dadosExternos = null) {
   console.log("\n");
 }
 
-// 🧩 Atualizar informações
+// 🧩 Atualizar informações (melhorado)
 async function atualizarMidia() {
   const dados = await carregarDados();
   if (dados.length === 0) {
@@ -179,15 +179,37 @@ async function atualizarMidia() {
 
   const midia = dados.find((m) => m.id === escolha);
 
+  // Se for série, atualizar episódios assistidos
   if (midia.tipo === "série") {
     midia.episodiosAssistidos = Number(
-      await inquirer.input({ message: `Episódios assistidos (de ${midia.episodiosTotal}):` })
+      await inquirer.input({
+        message: `Episódios assistidos (de ${midia.episodiosTotal}):`,
+      })
     );
   }
 
-  const novaNota = Number(await inquirer.input({ message: "Oq você achou do filme ou serie? Dê uma nota (1 a 10, ou 0 para pular):" }));
-  if (novaNota >= 1 && novaNota <= 10) {
-    midia.nota = novaNota;
+  // Pergunta se o usuário já assistiu
+  const assistido = await inquirer.confirm({
+    message: `Você já assistiu ${midia.titulo}?`,
+  });
+
+  // Se assistiu, permite dar uma nota
+  if (assistido) {
+    const novaNotaStr = await inquirer.input({
+      message: "Dê uma nota (1 a 10, use . ou , para decimais):",
+    });
+
+    // Substitui vírgula por ponto e converte
+    const novaNota = parseFloat(novaNotaStr.replace(",", "."));
+
+    if (!isNaN(novaNota) && novaNota >= 1 && novaNota <= 10) {
+      midia.nota = novaNota;
+      console.log(`✅ Nota ${novaNota} registrada para "${midia.titulo}".`);
+    } else {
+      console.log("⚠️ Nota inválida. Nenhuma alteração feita.");
+    }
+  } else {
+    console.log(`📌 "${midia.titulo}" ainda não foi assistido. Nota não atribuída.`);
   }
 
   await salvarDados(dados);

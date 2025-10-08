@@ -23,8 +23,8 @@
     "plataforma": "HBO",
     "temporadas": 3,
     "episodiosTotal": 20,
-    "episodiosAssistidos": 10,
-    "nota": 10,
+    "episodiosAssistidos": 1,
+    "nota": 1,
     "duracaoMedia": 30
   },
   {
@@ -52,19 +52,6 @@
     "episodiosAssistidos": 0,
     "nota": 9.5,
     "duracaoMedia": 117
-  },
-  {
-    "id": 1759793475001,
-    "titulo": "kaleu",
-    "tipo": "filme",
-    "genero": "ficção cientifica",
-    "ano": 2026,
-    "plataforma": "Youtube",
-    "temporadas": 0,
-    "episodiosTotal": 0,
-    "episodiosAssistidos": 0,
-    "nota": null,
-    "duracaoMedia": 112
   },
   {
     "id": 1759796885340,
